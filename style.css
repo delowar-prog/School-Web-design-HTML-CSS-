@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+/*Google Fonts End*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+    border: none;
+}
+
+ol,ul{
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6,a,p,img,ul,ol,li,p,.navbar{
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #2d3950;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.container{
+  width:1200px;
+  margin: 0 auto;
+}
+.float-left{
+  float:left;
+}
+.float-right{
+  float:right;
+}
+.clear{
+  overflow: hidden;
+}
+/*Common CSS End*/
+
+.headsection{
+    border-bottom: 0.5px solid #999;
+    background-color: #059862;
+    padding: 40px;
+}
+.logo{
+  width: 10%;
+  float: left;
+}
+.school_name{
+
+}
+.school_name h3, h4{
+  color:#fff;
+  font-size: 25px;
+  padding-top: 8px;
+}
+.loto-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+.nav-link{
+    color:rgb(189, 189, 189) !important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color:#fff !important;
+}
+/*Start Nav-section*/
+.nav-section {
+  background-color: #059862;
+  border-bottom: 2px solid #444;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #059862;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 14px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  transition: 0.6s ease; 
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-bottom: 1px solid #E9EBEC;
+
+
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #0C58A4;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+/*Close Nav-section*/
+/* Start Slider Section*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+ width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img{
+  height: 450px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot-control{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border: 4px solid #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #059862;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*End Slider*/
+/*content Section*/
+.left-content{
+  width: 65%;
+  padding: 10px;
+}
+.left-content h3 {
+  margin: 30px auto;
+  text-align: center;
+  color: #fff;
+  background-color: #059862;
+  padding: 10px;
+  border-radius: 4px;
+}
+.left-content p  {
+  text-align: justify;
+  line-height: 22px;
+  font-size: 14px;
+  color: #666;
+}
+.notice{
+  width: 35%;
+  padding: 10px;
+}
+.notice h3 {
+  margin: 30px auto;
+  text-align: center;
+  color: #fff;
+  background-color: #059862;
+  padding: 10px;
+  border-radius: 4px;
+}
+.notice table td{
+  height: 40px;
+  vertical-align: top;
+}
+.notice table i{
+    color: #0700E2;
+    padding-right: 5px;
+}
+.notice table a{
+    font-size: 13px;
+}
+/* Principles Speces*/
+.principles_speces{
+  background-color: #B4E0D0;
+  margin: 50px 0;
+  padding: 30px;
+}
+.speces{
+  width: 50%;
+}
+.speces h2{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 28px;
+}
+.speces p{
+    text-align: justify;
+    line-height: 23px;
+    font-size: 15px;
+    color: #333;
+}
+.principles_image img {
+  width: 70%;
+  border: 3px solid #059862;
+  margin-top: 87px;
+  box-shadow: 0px 0px 10px 4px #888;
+}
+.principles_image h3{
+    font-size: 22px;
+    padding: 8px 0px;
+    color: #059862;
+}
+.principles_image h5 {
+  font-size: 14px;
+}
+/*footer Section*/
+.footer_section{
+  background-color: #343A40;
+  padding: 50px 0px;
+}
+.footer_logo{
+  width: 30%;
+  float: left;
+  padding: 20px;
+  border-right: 1px solid #DEE1E6;
+}
+.footer_logo img{
+  width: 50%;
+  margin: 20px;
+}
+.footer_logo h3{
+  color: #fff;
+}
+.important_link{
+  width: 25%;
+  float: left;
+  padding: 20px;
+  border-right: 1px solid #DEE1E6;
+}
+.important_link h3 {
+  color: #ddd;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.important_link ul{
+    margin: 20px;
+}
+.important_link li {
+  padding: 5px 0px;
+}
+.important_link a{
+    color: #fff;
+    font-size: 16px;
+}
+.social-icon{
+width: 20%;
+float: left;
+padding: 20px;
+border-right: 1px solid #DEE1E6;
+}
+.social-icon h3{
+  color: #ddd;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.social-icon table{
+  margin: 20px;
+}
+.social-icon table td{
+  padding: 8px 0px;
+}
+.social-icon table td i{
+    color: #fff;
+    font-size: 25px;
+}
+.social-icon table td a{
+    padding-left: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+.address{
+  width: 25%;
+  float: left;
+  padding: 20px;
+  }
+.address h3{
+  color: #ddd;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.address p {
+  color: #fff;
+  padding: 12px;
+  font-size: 15px;
+}
+.copyright{
+  background-color: #212529;
+  padding: 35px 0px;
+}
+.copyright p{
+  color: #495057;
+  text-align: center;
+}
+/* Director Page css*/
+
+.director{
+  width: 65%;
+  margin: 40px auto;
+  float: left;
+}
+.director h2 {
+  margin: 0 20px 10px 0px;
+  text-align: center;
+  color: #fff;
+  background-color: #059862;
+  padding: 8px;
+  border-radius: 4px;
+}
+.director_item {
+  width: 30%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px 20px 5px 0px;
+  float: left;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.director_item img{
+  width: 100%;
+  height: 240px;
+}
+.director_item h3{
+  color:#059862;
+  font-size: 14px;
+  padding:10px 0 5px 10px;
+}
+.director_item h5{
+  padding: 0 0 20px 10px;
+  font-size: 12px;
+}
+.director_item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 7px 4px #ddd;
+}
+.director p{
+  text-align: justify;
+  font-size: 14px;
+  padding-right: 20px;
+  padding-bottom:20px;
+  line-height: 20px;
+}
+@media only screen and (min-width: 992px)and (max-width: 1199px){
+
+}
+@media only screen and (min-width: 768px)and (max-width: 991px){
+   
+}
